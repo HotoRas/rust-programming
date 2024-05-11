@@ -18,7 +18,7 @@ fn main() {
         io::stdin()
             .read_line(&mut guess) // insert to mutable var.
             .expect("Failed to read line");
-        let guess: u32 /*uint32*/ = guess.trim().parse() {
+        let guess: u32 /*uint32*/ = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         }
