@@ -1,5 +1,5 @@
 use std::io;
-use std::cmp::Ordering
+use std::cmp::Ordering;
 
 // cargo
 use rand::Rng;
